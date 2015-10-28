@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B1D7FB"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:alpha="0.8"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="date here"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/btn_setDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/calendar_expense"
+                android:onClick="setDate"
+                android:text="Set Date" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:entries="@array/liquidation_type" />
+
+            <EditText
+                android:id="@+id/item_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="item name"
+                android:paddingTop="20dp"/>
+
+            <EditText
+                android:id="@+id/amount_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="amount"
+                android:paddingTop="20dp"/>
+
+            <EditText
+                android:id="@+id/cash_num_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="cash/check number"
+                android:paddingTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/expense_image_preview"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/upload_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Take a Photo"
+                android:textColor="#ffff"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/expense_save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_weight="1"
+                    android:textColor="#ffff"
+                    android:layout_margin="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/expense_discard_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discard"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="#ffff"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

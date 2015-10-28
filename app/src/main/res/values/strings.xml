@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">PSITE Portal</string>
+    <string name="launcher_name">PSITE</string>
+
+    <string name="login_name">Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="seminar_title">Seminar</string>
+    <string name="register_name">Register</string>
+    <string name="cancel_name">Cancel</string>
+    <string name="register">Sign Up</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="expense">Expense Manager</string>
+    <string name="register_user">Register User</string>
+    <string name="description">will vary; image taken from camera</string>
+    <string name="action_attendance">New</string>
+    <string name="action_seminar">New</string>
+    <string name="login_url">http://www.psite7.org/portal/login.php</string>
+    <string name="register_url">http://www.psite7.org/portal/register.php</string>
+    <string name="active_seminars_url">http://www.psite7.org/portal/active_seminars.php</string>
+    <string name="add_expense_url">http://www.psite7.org/portal/add_expense.php</string>
+    <string name="attendance_url">http://psite7.org/portal/upload_attendance.php</string>
+    <string name="transactions_url">http://www.psite7.org/portal/transactions.php</string>
+    <string name="get_seminar_url">http://www.psite7.org/portal/get_seminar.php</string>
+    <string name="get_user_url">http://www.psite7.org/portal/get_user.php</string>
+    <string name="update_seminar_url">http://www.psite7.org/portal/update_seminar.php</string>
+    <string name="payment_url">http://www.psite7.org/portal/payment.php</string>
+    <string name="update_config_url">http://www.psite7.org/portal/update_seminar_config.php</string>
+    <string name="get_election_url">http://www.psite7.org/portal/get_election.php</string>
+    <string name="election_attendance_url">http://www.psite7.org/portal/election_attendance.php</string>
+    <string name="nominees_url">http://www.psite7.org/portal/nominees.php</string>
+    <string name="vote_url">http://www.psite7.org/portal/vote.php</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_expense">Expense</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="about_holder">Introduction (writing), a beginning section to a book, article or essay which states its purpose and goals. Foreword, a beginning section of a book, before the introduction, usually written by someone other than the author.</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Your Account</item>
+        <item>Officer Panel</item>
+        <item>Liquidation</item>
+        <item>Seminars</item>
+        <item>Take a Photo</item>
+        <item>Election</item>
+    </string-array>
+
+    <string-array name="nav_drawer_items_member">
+        <item>Your Account</item>
+        <item>Seminars</item>
+        <item>Take a Photo</item>
+        <item>Election</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_people</item>
+    </array>
+
+    <array name="nav_drawer_icons_member">
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_people</item>
+    </array>
+
+    <array name="liquidation_type">
+        <item>Collection</item>
+        <item>Expense</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+</resources>

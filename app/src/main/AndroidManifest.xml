@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.psiteportal.com.psiteportal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/psite"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/launcher_name"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DrawerFragmentActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <activity
+            android:name=".DrawerMainAdapter"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/register"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".AddExpenseActivity"
+            android:label="@string/expense"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".RegisterSeminarScanner"
+            android:label="Seminar Registration"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".SeminarProfileActivity"
+            android:label="@string/seminar_title"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".AddSeminarActivity"
+            android:label="Add Seminar"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".SeminarPanel"
+            android:label="Seminar Panel"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".EditSeminar"
+            android:label="Edit Seminar"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".ElectionActivity"
+            android:label="Election"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity
+            android:name=".ScanForElection"
+            android:label="Election"
+            android:configChanges="orientation|keyboardHidden"/>
+
+    </application>
+
+</manifest>

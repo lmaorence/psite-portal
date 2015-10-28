@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1D7FB">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/seminar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_edges"
+                android:hint="Seminar Title"
+                android:padding="10dp"
+                android:textColorHint="#CCCED1"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/selectedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_edges"
+                    android:hint="Seminar Date"
+                    android:padding="10dp"
+                    android:textColorHint="#CCCED1" />
+
+
+                <ImageButton
+                    android:id="@+id/SelectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:onClick="setDate"
+                    android:src="@drawable/calendar"
+
+                    android:text="@string/register_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_edges"
+                    android:hint="Seminar Start Time"
+                    android:padding="10dp"
+                    android:textColorHint="#CCCED1" />
+
+                <ImageButton
+                    android:id="@+id/select_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:onClick="setStartTime"
+                    android:src="@drawable/calendar" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_edges"
+                    android:hint="Seminar End Time"
+                    android:padding="10dp"
+                    android:textColorHint="#CCCED1" />
+
+                <ImageButton
+                    android:id="@+id/select_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:onClick="setEndTime"
+                    android:src="@drawable/calendar" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/bonus_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_edges"
+                android:hint="Bonus Points"
+                android:padding="10dp"
+                android:textColorHint="#CCCED1" />
+
+            <EditText
+                android:id="@+id/seminar_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_edges"
+                android:hint="Seminar Fee"
+                android:padding="10dp"
+                android:textColorHint="#CCCED1" />
+
+            <EditText
+                android:id="@+id/discount_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_edges"
+                android:hint="Discounted Fee"
+                android:padding="10dp"
+                android:textColorHint="#CCCED1" />
+
+            <EditText
+                android:id="@+id/point_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_edges"
+                android:hint="Point Cost"
+                android:padding="10dp"
+                android:textColorHint="#CCCED1" />
+
+            <EditText
+                android:id="@+id/seminar_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_edges"
+                android:hint="Venue"
+                android:padding="10dp"
+                android:textColorHint="#CCCED1" />
+
+            <EditText
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_edges"
+                android:hint="About"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#CCCED1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update_seminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_edges"
+                android:text="Add Seminar" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_edges"
+                android:text="@string/cancel_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
